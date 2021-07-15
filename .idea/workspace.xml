@@ -4,16 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6aac8d9-4bd7-473e-b1e0-9f93d49e849f" name="Default Changelist" comment="Dodanie Klasy HotelService wraz z metoda addRoomToHotel pobierajaca dane od uzytkownika i przekazujaca obiekt Room do metody zapisujacej obiekt w bazie danych">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Launcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/presenter/HotelDisplay.java" afterDir="false" />
+    <list default="true" id="d6aac8d9-4bd7-473e-b1e0-9f93d49e849f" name="Default Changelist" comment="dodanie HotelDisplay do wyswietlania menu hotelowego oraz dodanie klasy Launcher do uruchamiania aplikacji">
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/GuestService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Entities/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Entities/Guest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Guest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Entities/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Entities/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Launcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/databaseoperation/InsertingData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/databaseoperation/InsertingData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Guest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Guest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/presenter/HotelDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/presenter/HotelDisplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/HotelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/HotelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/databaseoperation/InsertingData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/databaseoperation/InsertingData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Guest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Guest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/presenter/HotelDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/presenter/HotelDisplay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/HotelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/HotelService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626345165520</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="dodanie HotelDisplay do wyswietlania menu hotelowego oraz dodanie klasy Launcher do uruchamiania aplikacji">
+      <created>1626348983888</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1626348983888</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -176,6 +185,7 @@
     <MESSAGE value="Utworzenie Klasy dodajacej dane do bazy danych. Stworzenie metody dodajacej pokój do bazy danych" />
     <MESSAGE value="Dodanie pola urodziny do klasy Guest oraz dodanie pola cena do Klasy Reservation" />
     <MESSAGE value="Dodanie Klasy HotelService wraz z metoda addRoomToHotel pobierajaca dane od uzytkownika i przekazujaca obiekt Room do metody zapisujacej obiekt w bazie danych" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dodanie Klasy HotelService wraz z metoda addRoomToHotel pobierajaca dane od uzytkownika i przekazujaca obiekt Room do metody zapisujacej obiekt w bazie danych" />
+    <MESSAGE value="dodanie HotelDisplay do wyswietlania menu hotelowego oraz dodanie klasy Launcher do uruchamiania aplikacji" />
+    <option name="LAST_COMMIT_MESSAGE" value="dodanie HotelDisplay do wyswietlania menu hotelowego oraz dodanie klasy Launcher do uruchamiania aplikacji" />
   </component>
 </project>

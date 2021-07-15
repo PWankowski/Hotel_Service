@@ -2,6 +2,7 @@ package entities;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.time.format.DateTimeParseException;
 import java.util.List;
 
 @Entity
@@ -17,7 +18,7 @@ public class Guest {
 
 
     @OneToOne
-    @JoinColumn(name = "address_id", referencedColumnName = "id")
+    @JoinColumn(name = "Address_ID", referencedColumnName = "id")
     private Address address;
 
     @OneToMany(mappedBy = "guest")
@@ -26,7 +27,7 @@ public class Guest {
     public Guest() {
     }
 
-    public Guest(String name, String surname, String birthday) {
+    public Guest(String name, String surname, String birthday) throws DateTimeParseException {
         this.name = name;
         this.surname = surname;
         this.birthday = LocalDate.parse(birthday);
