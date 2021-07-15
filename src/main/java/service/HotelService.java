@@ -1,6 +1,6 @@
 package service;
 
-import Entities.Room;
+import entities.Room;
 import databaseoperation.InsertingData;
 
 import java.util.InputMismatchException;

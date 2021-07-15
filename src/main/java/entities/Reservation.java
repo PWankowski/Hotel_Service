@@ -1,9 +1,8 @@
-package Entities;
+package entities;
 
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.util.List;
 
 @Entity
 public class Reservation {

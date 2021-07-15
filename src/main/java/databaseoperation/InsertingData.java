@@ -1,6 +1,6 @@
 package databaseoperation;
 
-import Entities.Room;
+import entities.Room;
 import databaseconnection.Connection;
 
 public class InsertingData {
