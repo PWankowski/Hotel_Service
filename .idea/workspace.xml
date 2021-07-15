@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6aac8d9-4bd7-473e-b1e0-9f93d49e849f" name="Default Changelist" comment="Utworzenie Klasy Connection do nawiazywania połaczenia z baza danych">
-      <change afterPath="$PROJECT_DIR$/src/main/java/databaseoperation/InsertData.java" afterDir="false" />
+    <list default="true" id="d6aac8d9-4bd7-473e-b1e0-9f93d49e849f" name="Default Changelist" comment="Dodanie pola urodziny do klasy Guest oraz dodanie pola cena do Klasy Reservation">
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/HotelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +108,21 @@
       <option name="project" value="LOCAL" />
       <updated>1626341999665</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Utworzenie Klasy dodajacej dane do bazy danych. Stworzenie metody dodajacej pokój do bazy danych">
+      <created>1626342847284</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1626342847284</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Dodanie pola urodziny do klasy Guest oraz dodanie pola cena do Klasy Reservation">
+      <created>1626343812098</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1626343812098</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -130,6 +145,8 @@
     <MESSAGE value="Utworzenie encji Room i Reservation oraz powiazanie ich relacja Many to One oraz powiazanie relacja Many To One Encji Room z Reservation" />
     <MESSAGE value="Utworzenie encji Room i Reservation oraz powiazanie ich relacja OneToMany oraz powiazanie relacja OneToMany Encji Room z Reservation" />
     <MESSAGE value="Utworzenie Klasy Connection do nawiazywania połaczenia z baza danych" />
-    <option name="LAST_COMMIT_MESSAGE" value="Utworzenie Klasy Connection do nawiazywania połaczenia z baza danych" />
+    <MESSAGE value="Utworzenie Klasy dodajacej dane do bazy danych. Stworzenie metody dodajacej pokój do bazy danych" />
+    <MESSAGE value="Dodanie pola urodziny do klasy Guest oraz dodanie pola cena do Klasy Reservation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dodanie pola urodziny do klasy Guest oraz dodanie pola cena do Klasy Reservation" />
   </component>
 </project>
