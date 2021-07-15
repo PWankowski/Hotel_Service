@@ -1,6 +1,7 @@
 package Entities;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.util.List;
 
 @Entity
@@ -12,6 +13,8 @@ public class Guest {
 
     private String name;
     private String surname;
+    private LocalDate birthday;
+
 
     @OneToOne
     @JoinColumn(name = "address_id", referencedColumnName = "id")
@@ -23,9 +26,10 @@ public class Guest {
     public Guest() {
     }
 
-    public Guest(String name, String surname) {
+    public Guest(String name, String surname, String birthday) {
         this.name = name;
         this.surname = surname;
+        this.birthday = LocalDate.parse(birthday);
     }
 
     public String getName() {
@@ -34,6 +38,10 @@ public class Guest {
 
     public String getSurname() {
         return surname;
+    }
+
+    public LocalDate getBirthday() {
+        return birthday;
     }
 
     public Address getAddress() {

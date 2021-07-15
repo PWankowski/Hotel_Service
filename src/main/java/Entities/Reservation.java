@@ -12,6 +12,7 @@ public class Reservation {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
+    private double price;
     private LocalDate checkin;
     private LocalDate checkout;
 
@@ -26,9 +27,10 @@ public class Reservation {
     public Reservation() {
     }
 
-    public Reservation(LocalDate checkin, LocalDate checkout) {
-        this.checkin = checkin;
-        this.checkout = checkout;
+    public Reservation(double price, String checkin, String checkout) {
+        this.price = price;
+        this.checkin = LocalDate.parse(checkin);
+        this.checkout = LocalDate.parse(checkout);
     }
 
     public LocalDate getCheckin() {
