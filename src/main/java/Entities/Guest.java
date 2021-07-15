@@ -1,6 +1,7 @@
 package Entities;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Guest {
@@ -16,13 +17,23 @@ public class Guest {
     @JoinColumn(name = "address_id", referencedColumnName = "id")
     private Address address;
 
+    @OneToMany(mappedBy = "guest")
+    private List<Reservation> reservationListGuest;
+
+    public Guest() {
+    }
+
+    public Guest(String name, String surname) {
+        this.name = name;
+        this.surname = surname;
+    }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getSurname() {
+        return surname;
     }
 
     public Address getAddress() {
@@ -33,6 +44,13 @@ public class Guest {
         this.address = address;
     }
 
+    public List<Reservation> getReservationList() {
+        return reservationListGuest;
+    }
+
+    public void addReservation(Reservation reservation){
+        reservationListGuest.add(reservation);
+    }
 
     @Override
     public String toString() {

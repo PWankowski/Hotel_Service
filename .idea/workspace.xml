@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6aac8d9-4bd7-473e-b1e0-9f93d49e849f" name="Default Changelist" comment="Dodanie pliku persistence i dodanie zaleznosci do poma">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="d6aac8d9-4bd7-473e-b1e0-9f93d49e849f" name="Default Changelist" comment="Utworzenie encji Room i Reservation oraz powiazanie ich relacja Many to One oraz powiazanie relacja Many To One Encji Room z Reservation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Entities/Guest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entities/Guest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +34,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Project_Hotel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Java Zajecia Zdalne/HotelProject" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -52,7 +52,42 @@
       <option name="project" value="LOCAL" />
       <updated>1626107264860</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Utworzenie encji Guest i Address">
+      <created>1626111312222</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1626111312222</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Utworzenie encji Guest i Address oraz powiazanie ich relacja ONE TO ONE">
+      <created>1626111438795</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1626111438795</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Utworzenie encji Room i Reservation oraz powiazanie ich relacja Many to Many oraz powiazanie relacja Many To Many Encji Room z Reservation">
+      <created>1626118447214</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1626118447214</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Utworzenie encji Room i Reservation oraz powiazanie ich relacja Many to Many oraz powiazanie relacja Many To Many Encji Room z Reservation">
+      <created>1626118610508</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1626118610508</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Utworzenie encji Room i Reservation oraz powiazanie ich relacja Many to One oraz powiazanie relacja Many To One Encji Room z Reservation">
+      <created>1626120909288</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1626120909288</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -65,9 +100,14 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Dodanie pliku persistence i dodanie zaleznosci do poma" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dodanie pliku persistence i dodanie zaleznosci do poma" />
+    <MESSAGE value="Utworzenie encji Guest i Address" />
+    <MESSAGE value="Utworzenie encji Guest i Address oraz powiazanie ich relacja ONE TO ONE" />
+    <MESSAGE value="Utworzenie encji Room i Reservation oraz powiazanie ich relacja Many to Many oraz powiazanie relacja Many To Many Encji Room z Reservation" />
+    <MESSAGE value="Utworzenie encji Room i Reservation oraz powiazanie ich relacja Many to One oraz powiazanie relacja Many To One Encji Room z Reservation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Utworzenie encji Room i Reservation oraz powiazanie ich relacja Many to One oraz powiazanie relacja Many To One Encji Room z Reservation" />
   </component>
 </project>
