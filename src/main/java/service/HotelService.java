@@ -57,6 +57,13 @@ public class HotelService {
 
     }
 
+    public void showAvailableRooms(){
+
+        selectingFromDataBase.selectingAvailableRooms()
+                .forEach(System.out::println);
+
+    }
+
 
 
 

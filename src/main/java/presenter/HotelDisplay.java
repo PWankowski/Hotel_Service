@@ -19,11 +19,12 @@ public class HotelDisplay {
 
         do{
 
-            System.out.println("0 - to close the program");
+            System.out.println("0 - To close the program");
             System.out.println("1 - Add new room into hotel base");
             System.out.println("2 - Add new guest");
-            System.out.println("3- Make a Reservation");
-            System.out.println("4 - to view all Rooms");
+            System.out.println("3 - Make a Reservation");
+            System.out.println("4 - To view all Rooms");
+            System.out.println("5 - To view available Rooms");
 
 
 
@@ -45,6 +46,8 @@ public class HotelDisplay {
                     hotelService.showRooms();
                     break;
                 case 5:
+                    hotelService.showAvailableRooms();
+                    break;
 
 
 
