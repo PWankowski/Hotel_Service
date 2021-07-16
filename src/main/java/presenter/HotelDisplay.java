@@ -23,6 +23,7 @@ public class HotelDisplay {
             System.out.println("1 - Add new room into hotel base");
             System.out.println("2 - Add new guest");
             System.out.println("3- Make a Reservation");
+            System.out.println("4 - to view all Rooms");
 
 
 
@@ -40,6 +41,11 @@ public class HotelDisplay {
                 case 3:
                     hotelService.makeReservation();
                     break;
+                case 4:
+                    hotelService.showRooms();
+                    break;
+                case 5:
+
 
 
             }

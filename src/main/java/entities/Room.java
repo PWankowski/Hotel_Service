@@ -53,7 +53,7 @@ public class Room {
 
     @Override
     public String toString() {
-        return "Room:" +
+        return "Room " +
                 "id:" + id +
                 ", size:" + size +
                 ", bathroom:" + bathroom +

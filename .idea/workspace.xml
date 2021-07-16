@@ -5,20 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6aac8d9-4bd7-473e-b1e0-9f93d49e849f" name="Default Changelist" comment="dodanie funkcjonalnosci rezerwowania pokojow">
-      <change afterPath="$PROJECT_DIR$/target/classes/service/GuestService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/databaseoperation/SelectingFromDataBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/databaseoperation/InsertingData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/databaseoperation/InsertingData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Guest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Guest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entities/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Room.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/presenter/HotelDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/presenter/HotelDisplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/HotelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/HotelService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/databaseoperation/InsertingData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/databaseoperation/InsertingData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Address.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Guest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Guest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Room.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/presenter/HotelDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/presenter/HotelDisplay.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/service/HotelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/HotelService.class" afterDir="false" />
     </list>
@@ -178,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626442183750</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="dodanie funkcjonalnosci rezerwowania pokojow">
+      <created>1626445695984</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1626445695984</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

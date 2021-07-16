@@ -1,5 +1,6 @@
 package service;
 
+import databaseoperation.SelectingFromDataBase;
 import entities.Reservation;
 import entities.Room;
 import databaseoperation.InsertingData;
@@ -13,6 +14,7 @@ public class HotelService {
 
     private Scanner scanner = new Scanner(System.in);
     private InsertingData insertingData = new InsertingData();
+    private SelectingFromDataBase selectingFromDataBase = new SelectingFromDataBase();
 
     public void addRoomToHotel() throws InputMismatchException {
 
@@ -44,6 +46,14 @@ public class HotelService {
         Reservation reservation = new Reservation(priceForReservation,startDate,endDate);
 
         insertingData.insertReservation(reservation,room_Id,guest_Id);
+
+    }
+
+
+    public void showRooms(){
+
+        selectingFromDataBase.selectingRooms()
+                .forEach(System.out::println);
 
     }
 
