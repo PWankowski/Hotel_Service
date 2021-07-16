@@ -22,6 +22,7 @@ public class HotelDisplay {
             System.out.println("0 - to close the program");
             System.out.println("1 - Add new room into hotel base");
             System.out.println("2 - Add new guest");
+            System.out.println("3- Make a Reservation");
 
 
 
@@ -35,6 +36,10 @@ public class HotelDisplay {
                     break;
                 case 2:
                     guestService.addGuestIntoDataBase();
+                    break;
+                case 3:
+                    hotelService.makeReservation();
+                    break;
 
 
             }

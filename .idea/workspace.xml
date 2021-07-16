@@ -4,16 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6aac8d9-4bd7-473e-b1e0-9f93d49e849f" name="Default Changelist" comment="dodanie HotelDisplay do wyswietlania menu hotelowego oraz dodanie klasy Launcher do uruchamiania aplikacji">
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/GuestService.java" afterDir="false" />
+    <list default="true" id="d6aac8d9-4bd7-473e-b1e0-9f93d49e849f" name="Default Changelist" comment="dodanie funkcjonalnosci rezerwowania pokojow">
+      <change afterPath="$PROJECT_DIR$/target/classes/service/GuestService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Launcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/databaseoperation/InsertingData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/databaseoperation/InsertingData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Address.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entities/Guest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Guest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Room.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/presenter/HotelDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/presenter/HotelDisplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/HotelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/HotelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/databaseoperation/InsertingData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/databaseoperation/InsertingData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Address.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/entities/Guest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Guest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Room.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/presenter/HotelDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/presenter/HotelDisplay.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/service/HotelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/HotelService.class" afterDir="false" />
     </list>
@@ -43,7 +48,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Java Zajecia Zdalne/HotelProject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Project_Hotel" />
   </component>
   <component name="RunManager">
     <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -159,7 +164,21 @@
       <option name="project" value="LOCAL" />
       <updated>1626348983888</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="stworzenie Funkcjonalnosci dodawania goscia do bazy danych, utworzenie klasy GuestService z metodami dodajacymi goscia i sprawdzajacymi jego wiek,">
+      <created>1626354910193</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1626354910193</updated>
+    </task>
+    <task id="LOCAL-00015" summary="dodanie funkcjonalnosci rezerwowania pokojow">
+      <created>1626442183750</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1626442183750</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,6 +205,8 @@
     <MESSAGE value="Dodanie pola urodziny do klasy Guest oraz dodanie pola cena do Klasy Reservation" />
     <MESSAGE value="Dodanie Klasy HotelService wraz z metoda addRoomToHotel pobierajaca dane od uzytkownika i przekazujaca obiekt Room do metody zapisujacej obiekt w bazie danych" />
     <MESSAGE value="dodanie HotelDisplay do wyswietlania menu hotelowego oraz dodanie klasy Launcher do uruchamiania aplikacji" />
-    <option name="LAST_COMMIT_MESSAGE" value="dodanie HotelDisplay do wyswietlania menu hotelowego oraz dodanie klasy Launcher do uruchamiania aplikacji" />
+    <MESSAGE value="stworzenie Funkcjonalnosci dodawania goscia do bazy danych, utworzenie klasy GuestService z metodami dodajacymi goscia i sprawdzajacymi jego wiek," />
+    <MESSAGE value="dodanie funkcjonalnosci rezerwowania pokojow" />
+    <option name="LAST_COMMIT_MESSAGE" value="dodanie funkcjonalnosci rezerwowania pokojow" />
   </component>
 </project>

@@ -3,6 +3,7 @@ package entities;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.time.format.DateTimeParseException;
 
 @Entity
 public class Reservation {
@@ -26,7 +27,7 @@ public class Reservation {
     public Reservation() {
     }
 
-    public Reservation(double price, String checkin, String checkout) {
+    public Reservation(double price, String checkin, String checkout) throws DateTimeParseException {
         this.price = price;
         this.checkin = LocalDate.parse(checkin);
         this.checkout = LocalDate.parse(checkout);

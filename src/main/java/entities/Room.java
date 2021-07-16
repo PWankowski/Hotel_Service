@@ -8,7 +8,7 @@ public class Room {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private int id;
 
     private int size;
     private boolean bathroom;
@@ -37,6 +37,10 @@ public class Room {
 
     public boolean isBooked() {
         return isBooked;
+    }
+
+    public void setBooked(boolean booked) {
+        isBooked = booked;
     }
 
     public List<Reservation> getReservationList() {
