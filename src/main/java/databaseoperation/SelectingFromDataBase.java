@@ -1,10 +1,12 @@
 package databaseoperation;
 
 import databaseconnection.Connection;
+import entities.Reservation;
 import entities.Room;
 
 
 import javax.persistence.Query;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,6 +37,20 @@ public class SelectingFromDataBase {
         return availableRoomsList;
 
 
+    }
+
+    public List<Reservation> selectingBookedRooms(LocalDate inputDate){
+        LocalDate localDate =  LocalDate.now();
+
+        Connection connection = new Connection();
+
+        Query query = connection.getEm().createQuery("FROM Reservation  WHERE checkout >= :TodayDate AND checkout < :FutureDate ");
+        query.setParameter("TodayDate",localDate);
+        query.setParameter("FutureDate",inputDate);
+        List<Reservation> reservationList = query.getResultList();
+
+        connection.closeConnection();
+        return reservationList;
 
 
 

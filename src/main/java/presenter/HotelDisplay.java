@@ -25,6 +25,7 @@ public class HotelDisplay {
             System.out.println("3 - Make a Reservation");
             System.out.println("4 - To view all Rooms");
             System.out.println("5 - To view available Rooms");
+            System.out.println("6 - To view booked Rooms with reservation date and  accommodated  guests");
 
 
 
@@ -48,6 +49,8 @@ public class HotelDisplay {
                 case 5:
                     hotelService.showAvailableRooms();
                     break;
+                case 6:
+                    hotelService.showBookedRooms();
 
 
 

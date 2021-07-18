@@ -56,4 +56,15 @@ public class Reservation {
     public void setGuest(Guest guest) {
         this.guest = guest;
     }
+
+    @Override
+    public String toString() {
+        return "Reservation:" +
+                "id=" + id +
+                ", price=" + price +
+                ", checkin=" + checkin +
+                ", checkout=" + checkout +
+                ", room=" + room +
+                ", guest=" + guest;
+    }
 }

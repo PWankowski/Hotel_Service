@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6aac8d9-4bd7-473e-b1e0-9f93d49e849f" name="Default Changelist" comment="dodanie funkcjonalnosci wyswietlania wszystkich pokoi">
+    <list default="true" id="d6aac8d9-4bd7-473e-b1e0-9f93d49e849f" name="Default Changelist" comment="dodanie funkcjonalnosci wyswietlania zarezerwowanych aktualnie pokoi wraz z data zameldowania/wymeldowania">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/databaseoperation/SelectingFromDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/databaseoperation/SelectingFromDataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Reservation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/presenter/HotelDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/presenter/HotelDisplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/HotelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/HotelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/databaseoperation/SelectingFromDataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/databaseoperation/SelectingFromDataBase.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/entities/Reservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Reservation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/presenter/HotelDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/presenter/HotelDisplay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/HotelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/HotelService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +41,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Project_Hotel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Java Zajecia Zdalne/HotelProject" />
   </component>
   <component name="RunManager">
     <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -181,7 +185,21 @@
       <option name="project" value="LOCAL" />
       <updated>1626462913709</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="dodanie funkcjonalnosci wyswietlania wszystkich dostepnych pokoi">
+      <created>1626463725066</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1626463725066</updated>
+    </task>
+    <task id="LOCAL-00019" summary="dodanie funkcjonalnosci wyswietlania zarezerwowanych aktualnie pokoi wraz z data zameldowania/wymeldowania">
+      <created>1626626628117</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1626626628117</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,6 +229,8 @@
     <MESSAGE value="stworzenie Funkcjonalnosci dodawania goscia do bazy danych, utworzenie klasy GuestService z metodami dodajacymi goscia i sprawdzajacymi jego wiek," />
     <MESSAGE value="dodanie funkcjonalnosci rezerwowania pokojow" />
     <MESSAGE value="dodanie funkcjonalnosci wyswietlania wszystkich pokoi" />
-    <option name="LAST_COMMIT_MESSAGE" value="dodanie funkcjonalnosci wyswietlania wszystkich pokoi" />
+    <MESSAGE value="dodanie funkcjonalnosci wyswietlania wszystkich dostepnych pokoi" />
+    <MESSAGE value="dodanie funkcjonalnosci wyswietlania zarezerwowanych aktualnie pokoi wraz z data zameldowania/wymeldowania" />
+    <option name="LAST_COMMIT_MESSAGE" value="dodanie funkcjonalnosci wyswietlania zarezerwowanych aktualnie pokoi wraz z data zameldowania/wymeldowania" />
   </component>
 </project>

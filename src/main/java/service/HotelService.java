@@ -5,8 +5,10 @@ import entities.Reservation;
 import entities.Room;
 import databaseoperation.InsertingData;
 
+import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 import java.util.InputMismatchException;
+import java.util.List;
 import java.util.Scanner;
 
 public class HotelService {
@@ -61,6 +63,17 @@ public class HotelService {
 
         selectingFromDataBase.selectingAvailableRooms()
                 .forEach(System.out::println);
+
+    }
+
+    public void showBookedRooms(){
+        System.out.println("Insert From Now To ... date in format yyyy-mm-dd:");
+        String inputDate = scanner.nextLine();
+
+
+         selectingFromDataBase.selectingBookedRooms(LocalDate.parse(inputDate))
+                 .forEach(System.out::println);
+
 
     }
 
