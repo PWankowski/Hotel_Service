@@ -10,10 +10,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/entities/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Reservation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/presenter/HotelDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/presenter/HotelDisplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/HotelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/HotelService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/databaseoperation/SelectingFromDataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/databaseoperation/SelectingFromDataBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Reservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Reservation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/presenter/HotelDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/presenter/HotelDisplay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/HotelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/HotelService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +37,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Java Zajecia Zdalne/HotelProject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Java Zajecia Zdalne/WarehouseProject — wersja Hibernate" />
   </component>
   <component name="RunManager">
     <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -199,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626626628117</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="dodanie funkcjonalnosci wyswietlania zarezerwowanych aktualnie pokoi wraz z data zameldowania/wymeldowania">
+      <created>1626633905461</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1626633905461</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

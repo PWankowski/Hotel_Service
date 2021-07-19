@@ -1,5 +1,6 @@
 package service;
 
+import databaseoperation.DeletingReservation;
 import databaseoperation.SelectingFromDataBase;
 import entities.Reservation;
 import entities.Room;
@@ -17,6 +18,7 @@ public class HotelService {
     private Scanner scanner = new Scanner(System.in);
     private InsertingData insertingData = new InsertingData();
     private SelectingFromDataBase selectingFromDataBase = new SelectingFromDataBase();
+    private DeletingReservation deletingReservation = new DeletingReservation();
 
     public void addRoomToHotel() throws InputMismatchException {
 
@@ -73,6 +75,15 @@ public class HotelService {
 
          selectingFromDataBase.selectingBookedRooms(LocalDate.parse(inputDate))
                  .forEach(System.out::println);
+
+
+    }
+
+    public void cancelReservation(){
+        System.out.println("Insert reservation Id which you want to cancel:");
+        long input_Id = scanner.nextLong();
+
+        deletingReservation.deleteReservation(input_Id);
 
 
     }

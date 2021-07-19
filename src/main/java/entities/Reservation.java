@@ -33,6 +33,10 @@ public class Reservation {
         this.checkout = LocalDate.parse(checkout);
     }
 
+    public long getId() {
+        return id;
+    }
+
     public LocalDate getCheckin() {
         return checkin;
     }
