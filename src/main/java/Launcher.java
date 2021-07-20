@@ -1,6 +1,5 @@
 import presenter.HotelDisplay;
 
-import javax.persistence.NoResultException;
 import java.time.format.DateTimeParseException;
 import java.util.InputMismatchException;
 

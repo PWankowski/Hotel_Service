@@ -6,8 +6,8 @@ import entities.Guest;
 import entities.Reservation;
 import entities.Room;
 import databaseoperation.InsertingData;
+import exceptions.GuestNotFoundException;
 
-import java.sql.SQLOutput;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
@@ -103,7 +103,7 @@ public class HotelService {
 
     }
 
-    public void findGuest(){
+    public void findGuest() throws GuestNotFoundException {
         System.out.println("Insert Guest Name: ");
         String inputName = scanner.nextLine();
         System.out.println("Insert Guest Name: ");

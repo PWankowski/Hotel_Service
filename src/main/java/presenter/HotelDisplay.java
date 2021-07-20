@@ -1,5 +1,6 @@
 package presenter;
 
+import exceptions.GuestNotFoundException;
 import service.GuestService;
 import service.HotelService;
 
@@ -56,7 +57,12 @@ public class HotelDisplay {
                 case 7:
                     hotelService.cancelReservation();
                 case 8:
-                    hotelService.findGuest();
+                    try{
+                        hotelService.findGuest();
+                    }catch (GuestNotFoundException gnf){
+                        System.out.println(gnf.getGetMessage());
+                }
+
 
 
 

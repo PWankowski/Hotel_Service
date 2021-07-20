@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6aac8d9-4bd7-473e-b1e0-9f93d49e849f" name="Default Changelist" comment="dodanie funkcjonalnosci wyswietlania pokoi do zwolnienia danego dnia">
+    <list default="true" id="d6aac8d9-4bd7-473e-b1e0-9f93d49e849f" name="Default Changelist" comment="dodanie funkcjonalnosci wyszukiwania goscia w bazie danych">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/databaseoperation/InsertingData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/databaseoperation/InsertingData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/databaseoperation/SelectingFromDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/databaseoperation/SelectingFromDataBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/presenter/HotelDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/presenter/HotelDisplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/HotelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/HotelService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Launcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Launcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/databaseoperation/DeletingReservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/databaseoperation/DeletingReservation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/databaseoperation/InsertingData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/databaseoperation/InsertingData.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/databaseoperation/SelectingFromDataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/databaseoperation/SelectingFromDataBase.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/presenter/HotelDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/presenter/HotelDisplay.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/service/HotelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/HotelService.class" afterDir="false" />
@@ -51,7 +50,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Java Zajecia Zdalne/JavaZaawansowanaProwadzacy" />
   </component>
   <component name="RunManager">
     <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -244,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626800136320</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="dodanie funkcjonalnosci wyszukiwania goscia w bazie danych">
+      <created>1626805578978</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1626805578978</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -278,6 +284,7 @@
     <MESSAGE value="dodanie funkcjonalnosci wyswietlania zarezerwowanych aktualnie pokoi wraz z data zameldowania/wymeldowania" />
     <MESSAGE value="dodanie funkcjonalnosci anulowania rezerwacji" />
     <MESSAGE value="dodanie funkcjonalnosci wyswietlania pokoi do zwolnienia danego dnia" />
-    <option name="LAST_COMMIT_MESSAGE" value="dodanie funkcjonalnosci wyswietlania pokoi do zwolnienia danego dnia" />
+    <MESSAGE value="dodanie funkcjonalnosci wyszukiwania goscia w bazie danych" />
+    <option name="LAST_COMMIT_MESSAGE" value="dodanie funkcjonalnosci wyszukiwania goscia w bazie danych" />
   </component>
 </project>
