@@ -2,6 +2,7 @@ package service;
 
 import databaseoperation.DeletingReservation;
 import databaseoperation.SelectingFromDataBase;
+import entities.Guest;
 import entities.Reservation;
 import entities.Room;
 import databaseoperation.InsertingData;
@@ -78,7 +79,6 @@ public class HotelService {
          selectingFromDataBase.selectingBookedRooms(LocalDate.parse(inputDate))
                  .forEach(System.out::println);
 
-
     }
 
     public void cancelReservation(){
@@ -86,7 +86,6 @@ public class HotelService {
         long input_Id = scanner.nextLong();
 
         deletingReservation.deleteReservation(input_Id);
-
 
     }
 
@@ -100,6 +99,22 @@ public class HotelService {
         }
         System.out.println("Rooms to checkout for today: ");
         roomsToCheckout.forEach(System.out::println);
+
+
+    }
+
+    public void findGuest(){
+        System.out.println("Insert Guest Name: ");
+        String inputName = scanner.nextLine();
+        System.out.println("Insert Guest Name: ");
+        String inputSurname = scanner.nextLine();
+
+        Guest guest = selectingFromDataBase.selectingGuests(inputName,inputSurname);
+        if(guest == null){
+            System.out.println("Guest don't exist in our dataBase");
+        }else{
+            System.out.println(guest);
+        }
 
 
 

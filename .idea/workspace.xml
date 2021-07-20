@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6aac8d9-4bd7-473e-b1e0-9f93d49e849f" name="Default Changelist" comment="dodanie funkcjonalnosci anulowania rezerwacji">
+    <list default="true" id="d6aac8d9-4bd7-473e-b1e0-9f93d49e849f" name="Default Changelist" comment="dodanie funkcjonalnosci wyswietlania pokoi do zwolnienia danego dnia">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/databaseoperation/InsertingData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/databaseoperation/InsertingData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/databaseoperation/SelectingFromDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/databaseoperation/SelectingFromDataBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/presenter/HotelDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/presenter/HotelDisplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/HotelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/HotelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Launcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Launcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/databaseoperation/DeletingReservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/databaseoperation/DeletingReservation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/databaseoperation/SelectingFromDataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/databaseoperation/SelectingFromDataBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/presenter/HotelDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/presenter/HotelDisplay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/HotelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/HotelService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +31,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1vDkAmmdlPBZbSE4sI3yVVIow2l" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -223,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626721160298</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="dodanie funkcjonalnosci wyswietlania pokoi do zwolnienia danego dnia">
+      <created>1626800136320</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1626800136320</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -256,6 +277,7 @@
     <MESSAGE value="dodanie funkcjonalnosci wyswietlania wszystkich dostepnych pokoi" />
     <MESSAGE value="dodanie funkcjonalnosci wyswietlania zarezerwowanych aktualnie pokoi wraz z data zameldowania/wymeldowania" />
     <MESSAGE value="dodanie funkcjonalnosci anulowania rezerwacji" />
-    <option name="LAST_COMMIT_MESSAGE" value="dodanie funkcjonalnosci anulowania rezerwacji" />
+    <MESSAGE value="dodanie funkcjonalnosci wyswietlania pokoi do zwolnienia danego dnia" />
+    <option name="LAST_COMMIT_MESSAGE" value="dodanie funkcjonalnosci wyswietlania pokoi do zwolnienia danego dnia" />
   </component>
 </project>

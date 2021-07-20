@@ -55,7 +55,7 @@ public class InsertingData {
         guest.addReservation(reservation);
 
         room.addReservation(reservation);
-        room.setBooked(true);
+
 
         connection.startTransaction();
         connection.getEm().persist(reservation);

@@ -1,6 +1,7 @@
 package databaseoperation;
 
 import databaseconnection.Connection;
+import entities.Guest;
 import entities.Reservation;
 import entities.Room;
 
@@ -69,6 +70,20 @@ public class SelectingFromDataBase {
 
 
 
+    }
+
+    public Guest selectingGuests(String inputName, String inputSurname) {
+        Connection connection = new Connection();
+
+        Query query = connection.getEm().createQuery("FROM Guest  WHERE name = :Name AND surname = : Surname");
+        query.setParameter("Name",inputName);
+        query.setParameter("Surname",inputSurname);
+
+        Guest guest = (Guest) query.getSingleResult();
+
+        connection.closeConnection();
+
+        return guest;
 
     }
 

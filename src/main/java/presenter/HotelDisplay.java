@@ -27,6 +27,7 @@ public class HotelDisplay {
             System.out.println("5 - To view available Rooms");
             System.out.println("6 - To view booked Rooms with reservation date and  accommodated  guests");
             System.out.println("7 - To cancel reservation");
+            System.out.println("8 - Find Guest in  Database");
 
 
 
@@ -54,6 +55,8 @@ public class HotelDisplay {
                     hotelService.showBookedRooms();
                 case 7:
                     hotelService.cancelReservation();
+                case 8:
+                    hotelService.findGuest();
 
 
 
