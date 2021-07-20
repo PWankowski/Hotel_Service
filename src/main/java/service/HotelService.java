@@ -66,8 +66,13 @@ public class HotelService {
 
     public void showAvailableRooms(){
 
-        selectingFromDataBase.selectingAvailableRooms()
-                .forEach(System.out::println);
+        List<Room> availableRoomsList =  selectingFromDataBase.selectingAvailableRooms();
+        if(availableRoomsList.isEmpty()){
+            System.out.println("All rooms are booked!");
+        }else{
+            availableRoomsList.forEach(System.out::println);
+        }
+
 
     }
 
