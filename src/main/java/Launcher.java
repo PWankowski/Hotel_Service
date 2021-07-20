@@ -10,6 +10,7 @@ public class Launcher {
         HotelDisplay hotelDisplay = new HotelDisplay();
 
         try{
+            hotelDisplay.showRoomsToCheckoutForToday();
             hotelDisplay.showMenu();
         }catch (InputMismatchException ime){
             System.out.println("Inserted wrong value !");

@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6aac8d9-4bd7-473e-b1e0-9f93d49e849f" name="Default Changelist" comment="dodanie funkcjonalnosci wyswietlania zarezerwowanych aktualnie pokoi wraz z data zameldowania/wymeldowania">
+    <list default="true" id="d6aac8d9-4bd7-473e-b1e0-9f93d49e849f" name="Default Changelist" comment="dodanie funkcjonalnosci anulowania rezerwacji">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Launcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/databaseoperation/SelectingFromDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/databaseoperation/SelectingFromDataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Reservation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/presenter/HotelDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/presenter/HotelDisplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/HotelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/HotelService.java" afterDir="false" />
     </list>
@@ -37,7 +37,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Java Zajecia Zdalne/WarehouseProject — wersja Hibernate" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -202,7 +202,28 @@
       <option name="project" value="LOCAL" />
       <updated>1626633905461</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="dodanie funkcjonalnosci anulowania rezerwacji">
+      <created>1626720882486</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1626720882486</updated>
+    </task>
+    <task id="LOCAL-00022" summary="dodanie funkcjonalnosci anulowania rezerwacji">
+      <created>1626720943525</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1626720943525</updated>
+    </task>
+    <task id="LOCAL-00023" summary="dodanie funkcjonalnosci anulowania rezerwacji">
+      <created>1626721160298</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1626721160298</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,6 +255,7 @@
     <MESSAGE value="dodanie funkcjonalnosci wyswietlania wszystkich pokoi" />
     <MESSAGE value="dodanie funkcjonalnosci wyswietlania wszystkich dostepnych pokoi" />
     <MESSAGE value="dodanie funkcjonalnosci wyswietlania zarezerwowanych aktualnie pokoi wraz z data zameldowania/wymeldowania" />
-    <option name="LAST_COMMIT_MESSAGE" value="dodanie funkcjonalnosci wyswietlania zarezerwowanych aktualnie pokoi wraz z data zameldowania/wymeldowania" />
+    <MESSAGE value="dodanie funkcjonalnosci anulowania rezerwacji" />
+    <option name="LAST_COMMIT_MESSAGE" value="dodanie funkcjonalnosci anulowania rezerwacji" />
   </component>
 </project>

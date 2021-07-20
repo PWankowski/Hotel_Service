@@ -7,7 +7,6 @@ import entities.Room;
 
 import javax.persistence.Query;
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
 
 public class SelectingFromDataBase {
@@ -51,6 +50,23 @@ public class SelectingFromDataBase {
 
         connection.closeConnection();
         return reservationList;
+
+
+
+    }
+
+    public List<Reservation> selectingRoomsToCheckout(){
+        LocalDate localDate =  LocalDate.now();
+
+        Connection connection = new Connection();
+
+        Query query = connection.getEm().createQuery("FROM Reservation  WHERE checkout = :TodayDate");
+        query.setParameter("TodayDate",localDate);
+        List<Reservation> reservationList = query.getResultList();
+
+        connection.closeConnection();
+        return  reservationList;
+
 
 
 

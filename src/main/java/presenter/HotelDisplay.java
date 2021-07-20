@@ -26,7 +26,7 @@ public class HotelDisplay {
             System.out.println("4 - To view all Rooms");
             System.out.println("5 - To view available Rooms");
             System.out.println("6 - To view booked Rooms with reservation date and  accommodated  guests");
-            System.out.println("7 - to cancel reservation");
+            System.out.println("7 - To cancel reservation");
 
 
 
@@ -62,6 +62,13 @@ public class HotelDisplay {
 
         }while(nextMove);
 
+
+    }
+
+
+    public void showRoomsToCheckoutForToday(){
+
+            hotelService.showRoomsToCheckout();
 
     }
 

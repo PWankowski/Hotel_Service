@@ -6,8 +6,10 @@ import entities.Reservation;
 import entities.Room;
 import databaseoperation.InsertingData;
 
+import java.sql.SQLOutput;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
+import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
@@ -84,6 +86,21 @@ public class HotelService {
         long input_Id = scanner.nextLong();
 
         deletingReservation.deleteReservation(input_Id);
+
+
+    }
+
+    public void showRoomsToCheckout(){
+
+        List<Reservation> checkoutList = selectingFromDataBase.selectingRoomsToCheckout();
+        List<Room> roomsToCheckout = new ArrayList<>();
+
+        for(Reservation r : checkoutList){
+           roomsToCheckout.add(r.getRoom());
+        }
+        System.out.println("Rooms to checkout for today: ");
+        roomsToCheckout.forEach(System.out::println);
+
 
 
     }
