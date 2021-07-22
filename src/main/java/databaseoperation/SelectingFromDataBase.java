@@ -88,7 +88,7 @@ public class SelectingFromDataBase {
 
     }
 
-    public Guest selectingGuests(String inputName, String inputSurname) throws GuestNotFoundException {
+    public List<Guest> selectingGuests(String inputName, String inputSurname) throws GuestNotFoundException {
         Connection connection = new Connection();
 
         Query query = connection.getEm().createQuery("FROM Guest  WHERE name = :Name AND surname = : Surname");
@@ -96,7 +96,7 @@ public class SelectingFromDataBase {
         query.setParameter("Surname",inputSurname);
 
         try{
-            return (Guest) query.getSingleResult();
+            return query.getResultList();
         }catch (NoResultException nr){
             throw  new GuestNotFoundException("Guest didn't found in database");
         }finally {

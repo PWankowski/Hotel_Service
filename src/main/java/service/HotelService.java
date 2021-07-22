@@ -128,11 +128,11 @@ public class HotelService {
         System.out.println("Insert Guest Name: ");
         String inputSurname = scanner.nextLine();
 
-        Guest guest = selectingFromDataBase.selectingGuests(inputName,inputSurname);
-        if(guest == null){
+        List<Guest> guestsLists = selectingFromDataBase.selectingGuests(inputName,inputSurname);
+        if(guestsLists.isEmpty()){
             System.out.println("Guest don't exist in our dataBase");
         }else{
-            System.out.println(guest);
+            guestsLists.forEach(System.out::println);
         }
 
     }
@@ -168,6 +168,8 @@ public class HotelService {
             }
 
     }
+
+
 
 
 
