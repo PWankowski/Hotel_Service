@@ -55,6 +55,20 @@ public class SelectingFromDataBase {
         return reservationList;
 
 
+    }
+
+    public List<Reservation> selectingBookedRooms(LocalDate firstDate,LocalDate secondDate){
+
+        Connection connection = new Connection();
+
+        Query query = connection.getEm().createQuery("FROM Reservation  WHERE checkout >= :firstDate AND checkout < :nextDate ");
+        query.setParameter("firstDate",firstDate);
+        query.setParameter("nextDate",secondDate);
+        List<Reservation> reservationList = query.getResultList();
+
+        connection.closeConnection();
+        return reservationList;
+
 
     }
 

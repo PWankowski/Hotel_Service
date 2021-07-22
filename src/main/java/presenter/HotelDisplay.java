@@ -29,6 +29,8 @@ public class HotelDisplay {
             System.out.println("6 - To view booked Rooms with reservation date and  accommodated  guests");
             System.out.println("7 - To cancel reservation");
             System.out.println("8 - Find Guest in  Database");
+            System.out.println("9 - Take the room if keys was given to guest");
+            System.out.println("10 - Free the room if keys was taken from guest");
 
 
 
@@ -53,15 +55,24 @@ public class HotelDisplay {
                     hotelService.showAvailableRooms();
                     break;
                 case 6:
-                    hotelService.showBookedRooms();
+                    hotelService.showBookedRoomsWithReservation();
+                    break;
                 case 7:
                     hotelService.cancelReservation();
+                    break;
                 case 8:
                     try{
                         hotelService.findGuest();
                     }catch (GuestNotFoundException gnf){
                         System.out.println(gnf.getGetMessage());
                 }
+                    break;
+                case 9:
+                    hotelService.takeTheRoom();
+                    break;
+                case 10:
+                    hotelService.freeTheRoom();
+                    break;
 
 
 

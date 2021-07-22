@@ -26,6 +26,9 @@ public class Room {
         this.isBooked = isBooked;
     }
 
+    public int getId() {
+        return id;
+    }
 
     public int getSize() {
         return size;

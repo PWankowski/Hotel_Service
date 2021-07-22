@@ -2,6 +2,7 @@ import presenter.HotelDisplay;
 
 import java.time.format.DateTimeParseException;
 import java.util.InputMismatchException;
+import java.util.NoSuchElementException;
 
 public class Launcher {
 
@@ -12,7 +13,7 @@ public class Launcher {
         try{
             hotelDisplay.showRoomsToCheckoutForToday();
             hotelDisplay.showMenu();
-        }catch (InputMismatchException ime){
+        }catch (InputMismatchException  ime){
             System.out.println("Inserted wrong value !");
             ime.printStackTrace();
         }catch (DateTimeParseException dte){

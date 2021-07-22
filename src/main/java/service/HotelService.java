@@ -2,6 +2,7 @@ package service;
 
 import databaseoperation.DeletingReservation;
 import databaseoperation.SelectingFromDataBase;
+import databaseoperation.UpdatingData;
 import entities.Guest;
 import entities.Reservation;
 import entities.Room;
@@ -10,10 +11,7 @@ import exceptions.GuestNotFoundException;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
-import java.util.ArrayList;
-import java.util.InputMismatchException;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class HotelService {
 
@@ -22,6 +20,7 @@ public class HotelService {
     private InsertingData insertingData = new InsertingData();
     private SelectingFromDataBase selectingFromDataBase = new SelectingFromDataBase();
     private DeletingReservation deletingReservation = new DeletingReservation();
+    private UpdatingData updatingData = new UpdatingData();
 
     public void addRoomToHotel() throws InputMismatchException {
 
@@ -76,17 +75,32 @@ public class HotelService {
 
     }
 
-    public void showBookedRooms(){
-        System.out.println("Insert From Now To ... date in format yyyy-mm-dd:");
-        String inputDate = scanner.nextLine();
+    public void showBookedRoomsWithReservation() throws InputMismatchException{
+        System.out.println("If you want search by TodayDate until nextDate press 1 if you want to input your own period of time press 2");
+        int userInput = scanner.nextInt();
+        scanner.nextLine();
 
+        if(userInput ==1){
+            System.out.println("Insert From Now To ... date in format yyyy-mm-dd:");
+            String inputDate = scanner.nextLine();
+            selectingFromDataBase.selectingBookedRooms(LocalDate.parse(inputDate))
+                    .forEach(System.out::println);
 
-         selectingFromDataBase.selectingBookedRooms(LocalDate.parse(inputDate))
-                 .forEach(System.out::println);
+        }else if(userInput ==2){
+            System.out.println("Insert start  date in format yyyy-mm-dd:");
+            String startDate = scanner.nextLine();
+            System.out.println("Insert end  date in format yyyy-mm-dd:");
+            String endDate = scanner.nextLine();
+            selectingFromDataBase.selectingBookedRooms(LocalDate.parse(startDate),LocalDate.parse(endDate))
+                    .forEach(System.out::println);
+        }else{
+            System.out.println("Inserted value isn't correct!");
+        }
+
 
     }
 
-    public void cancelReservation(){
+    public void cancelReservation() throws InputMismatchException{
         System.out.println("Insert reservation Id which you want to cancel:");
         long input_Id = scanner.nextLong();
 
@@ -121,7 +135,37 @@ public class HotelService {
             System.out.println(guest);
         }
 
+    }
+    public void takeTheRoom() throws InputMismatchException{
+        System.out.println("Insert room id which you want to occupied");
+        int room_id = scanner.nextInt();
 
+            Optional<Room> room = selectingFromDataBase.selectingRooms().stream()
+                    .filter(r -> r.getId() == room_id)
+                    .findFirst();
+            if(room.isEmpty()){
+                System.out.println("Room doesn't exist");
+            }else{
+                updatingData.updateRoomStatus(true,room_id);
+                System.out.println("Room was successfully occupied");
+            }
+
+
+    }
+
+    public void freeTheRoom() throws InputMismatchException{
+        System.out.println("Insert room id which you want to occupied");
+        int room_id = scanner.nextInt();
+
+        Optional<Room> room = selectingFromDataBase.selectingRooms().stream()
+                .filter(r -> r.getId() == room_id)
+                .findFirst();
+        if(room.isEmpty()){
+            System.out.println("Room doesn't exist");
+        }else{
+            updatingData.updateRoomStatus(false,room_id);
+                System.out.println("Room was successfully free");
+            }
 
     }
 
