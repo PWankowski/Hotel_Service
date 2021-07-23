@@ -10,6 +10,7 @@ import entities.Guest;
 import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeParseException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class GuestService {
@@ -59,7 +60,7 @@ public class GuestService {
 
     }
 
-    public void updateGuestStatus(){
+    public void updateGuestStatus() throws InputMismatchException {
 
 
         System.out.println("Insert guest id");
@@ -73,10 +74,6 @@ public class GuestService {
         String updatedStreet = scanner.nextLine();
 
         updatingData.updateAddress(updatedCity,updatedPostcode,updatedStreet,guest_Id);
-
-
-
-
 
     }
 

@@ -10,16 +10,9 @@ public class Launcher {
 
         HotelDisplay hotelDisplay = new HotelDisplay();
 
-        try{
             hotelDisplay.showRoomsToCheckoutForToday();
             hotelDisplay.showMenu();
-        }catch (InputMismatchException  ime){
-            System.out.println("Inserted wrong value !");
-            ime.printStackTrace();
-        }catch (DateTimeParseException dte){
-            System.out.println("Inserted wrong date value");
-            dte.printStackTrace();
-        }
+
 
 
     }

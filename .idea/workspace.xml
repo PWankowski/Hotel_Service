@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6aac8d9-4bd7-473e-b1e0-9f93d49e849f" name="Default Changelist" comment="Zmiany w metodzie selectingGuest w klasie SelectingFromDataBase oraz w Hotelservice metoda findGuest, zmiana zwracanego typu z obiektu na liste obiektow">
+    <list default="true" id="d6aac8d9-4bd7-473e-b1e0-9f93d49e849f" name="Default Changelist" comment="Dodanie metody aktualizujacej adres klienta, utworzenie metody updateAddress w klasie UpdatindData oraz updateGuestStatus w GuestService">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/databaseoperation/DeletingReservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/databaseoperation/DeletingReservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/databaseoperation/UpdatingData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/databaseoperation/UpdatingData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Launcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/presenter/HotelDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/presenter/HotelDisplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/GuestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/GuestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/databaseoperation/DeletingReservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/databaseoperation/DeletingReservation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Room.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/GuestService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/GuestService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Launcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Launcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/presenter/HotelDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/presenter/HotelDisplay.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626984315799</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Dodanie metody aktualizujacej adres klienta, utworzenie metody updateAddress w klasie UpdatindData oraz updateGuestStatus w GuestService">
+      <created>1627067338881</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1627067338881</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -325,6 +329,7 @@
     <MESSAGE value="Dodanie klasy Update z aktualizacją statusu pokoju wolny zajety" />
     <MESSAGE value="Dodanie metod zajmujacej pokoj przy wydaniu kluczy oraz metody zwalniajacej pokoj przy odebraniu kluczy od gosci" />
     <MESSAGE value="Zmiany w metodzie selectingGuest w klasie SelectingFromDataBase oraz w Hotelservice metoda findGuest, zmiana zwracanego typu z obiektu na liste obiektow" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zmiany w metodzie selectingGuest w klasie SelectingFromDataBase oraz w Hotelservice metoda findGuest, zmiana zwracanego typu z obiektu na liste obiektow" />
+    <MESSAGE value="Dodanie metody aktualizujacej adres klienta, utworzenie metody updateAddress w klasie UpdatindData oraz updateGuestStatus w GuestService" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dodanie metody aktualizujacej adres klienta, utworzenie metody updateAddress w klasie UpdatindData oraz updateGuestStatus w GuestService" />
   </component>
 </project>
