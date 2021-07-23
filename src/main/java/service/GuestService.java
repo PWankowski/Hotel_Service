@@ -2,6 +2,8 @@ package service;
 
 import com.mysql.cj.xdevapi.AddResult;
 import databaseoperation.InsertingData;
+import databaseoperation.SelectingFromDataBase;
+import databaseoperation.UpdatingData;
 import entities.Address;
 import entities.Guest;
 
@@ -14,6 +16,8 @@ public class GuestService {
 
     private Scanner scanner = new Scanner(System.in);
     private InsertingData insertingData = new InsertingData();
+    private UpdatingData updatingData = new UpdatingData();
+
 
 
 
@@ -52,6 +56,27 @@ public class GuestService {
             return false;
         }
         return true;
+
+    }
+
+    public void updateGuestStatus(){
+
+
+        System.out.println("Insert guest id");
+        int guest_Id = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println("Update city");
+        String updatedCity = scanner.nextLine();
+        System.out.println("Update postcode");
+        String updatedPostcode = scanner.nextLine();
+        System.out.println("Update street");
+        String updatedStreet = scanner.nextLine();
+
+        updatingData.updateAddress(updatedCity,updatedPostcode,updatedStreet,guest_Id);
+
+
+
+
 
     }
 

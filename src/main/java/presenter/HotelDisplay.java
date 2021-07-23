@@ -29,8 +29,9 @@ public class HotelDisplay {
             System.out.println("6 - To view booked Rooms with reservation date and  accommodated  guests");
             System.out.println("7 - To cancel reservation");
             System.out.println("8 - Find Guest in  Database");
-            System.out.println("9 - Take the room if keys was given to guest");
+            System.out.println("9 - Update Guest Address ");
             System.out.println("10 - Free the room if keys was taken from guest");
+            System.out.println("11 - Take the room if keys was given to guest");
 
 
 
@@ -68,10 +69,14 @@ public class HotelDisplay {
                 }
                     break;
                 case 9:
-                    hotelService.takeTheRoom();
+                    guestService.updateGuestStatus();
                     break;
+
                 case 10:
                     hotelService.freeTheRoom();
+                    break;
+                case 11:
+                    hotelService.takeTheRoom();
                     break;
 
 

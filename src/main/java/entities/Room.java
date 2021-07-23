@@ -42,9 +42,7 @@ public class Room {
         return isBooked;
     }
 
-    public void setBooked(boolean booked) {
-        isBooked = booked;
-    }
+
 
     public List<Reservation> getReservationList() {
         return reservationListRoom;

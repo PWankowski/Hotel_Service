@@ -24,7 +24,7 @@ public class DeletingReservation {
 
         Room room = reservation.getRoom();
         room.getReservationList().removeIf(r -> r.getId() == idFromUser);
-        room.setBooked(false);
+
 
 
         Query query1 = connection.getEm().createQuery("DELETE FROM Reservation WHERE id = :input_Id");
@@ -37,10 +37,6 @@ public class DeletingReservation {
 
 
     }
-
-
-
-
 
 
 }

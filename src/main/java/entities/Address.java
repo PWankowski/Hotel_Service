@@ -13,7 +13,7 @@ public class Address {
 
     private String street;
     private String city;
-    private String postCode;
+    private String postcode;
 
     public Address() {
     }
@@ -21,7 +21,7 @@ public class Address {
     public Address(String street, String city, String postCode) {
         this.street = street;
         this.city = city;
-        this.postCode = postCode;
+        this.postcode = postCode;
     }
 
     public String getStreet() {
@@ -32,8 +32,8 @@ public class Address {
         return city;
     }
 
-    public String getPostCode() {
-        return postCode;
+    public String getPostcode() {
+        return postcode;
     }
 
     @Override
@@ -41,6 +41,6 @@ public class Address {
         return " Address:" +
                 "Street='" + street + '\'' +
                 ", City='" + city + '\'' +
-                ", PostCode='" + postCode;
+                ", PostCode='" + postcode;
     }
 }
