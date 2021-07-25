@@ -10,9 +10,8 @@ public class Launcher {
 
         HotelDisplay hotelDisplay = new HotelDisplay();
 
-            hotelDisplay.showRoomsToCheckoutForToday();
-            hotelDisplay.showMenu();
-
+        hotelDisplay.showRoomsToCheckoutForToday();
+        hotelDisplay.showMenu();
 
 
     }

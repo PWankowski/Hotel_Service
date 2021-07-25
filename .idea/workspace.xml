@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6aac8d9-4bd7-473e-b1e0-9f93d49e849f" name="Default Changelist" comment="Dodanie metody aktualizujacej adres klienta, utworzenie metody updateAddress w klasie UpdatindData oraz updateGuestStatus w GuestService">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/presenter/HotelDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/presenter/HotelDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/GuestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/GuestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Launcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Launcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Address.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/presenter/HotelDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/presenter/HotelDisplay.class" afterDir="false" />
-    </list>
+    <list default="true" id="d6aac8d9-4bd7-473e-b1e0-9f93d49e849f" name="Default Changelist" comment="Porządki i formatowanie kodu" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +39,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Java Zajecia Zdalne/Zeus_Project_prowadzacy/zdjavapol83_zeus-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -289,7 +281,21 @@
       <option name="project" value="LOCAL" />
       <updated>1627067338881</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Przeniesienie obsługi wyjątkow do klasy HotelDisplay">
+      <created>1627069293087</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1627069293087</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Porządki i formatowanie kodu">
+      <created>1627235250729</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1627235250730</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -305,8 +311,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Dodanie pliku persistence i dodanie zaleznosci do poma" />
-    <MESSAGE value="Utworzenie encji Guest i Address" />
     <MESSAGE value="Utworzenie encji Guest i Address oraz powiazanie ich relacja ONE TO ONE" />
     <MESSAGE value="Utworzenie encji Room i Reservation oraz powiazanie ich relacja Many to Many oraz powiazanie relacja Many To Many Encji Room z Reservation" />
     <MESSAGE value="Utworzenie encji Room i Reservation oraz powiazanie ich relacja Many to One oraz powiazanie relacja Many To One Encji Room z Reservation" />
@@ -330,6 +334,8 @@
     <MESSAGE value="Dodanie metod zajmujacej pokoj przy wydaniu kluczy oraz metody zwalniajacej pokoj przy odebraniu kluczy od gosci" />
     <MESSAGE value="Zmiany w metodzie selectingGuest w klasie SelectingFromDataBase oraz w Hotelservice metoda findGuest, zmiana zwracanego typu z obiektu na liste obiektow" />
     <MESSAGE value="Dodanie metody aktualizujacej adres klienta, utworzenie metody updateAddress w klasie UpdatindData oraz updateGuestStatus w GuestService" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dodanie metody aktualizujacej adres klienta, utworzenie metody updateAddress w klasie UpdatindData oraz updateGuestStatus w GuestService" />
+    <MESSAGE value="Przeniesienie obsługi wyjątkow do klasy HotelDisplay" />
+    <MESSAGE value="Porządki i formatowanie kodu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Porządki i formatowanie kodu" />
   </component>
 </project>

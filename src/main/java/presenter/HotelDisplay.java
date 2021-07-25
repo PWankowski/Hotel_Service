@@ -12,14 +12,13 @@ public class HotelDisplay {
 
     private Scanner scanner = new Scanner(System.in);
     private boolean nextMove = true;
-    private HotelService  hotelService = new HotelService();
+    private HotelService hotelService = new HotelService();
     private GuestService guestService = new GuestService();
 
 
+    public void showMenu() {
 
-    public void showMenu()  {
-
-        do{
+        do {
 
             System.out.println("0 - To close the program");
             System.out.println("1 - Add new room into hotel base");
@@ -35,32 +34,31 @@ public class HotelDisplay {
             System.out.println("11 - Take the room if keys was given to guest");
 
 
-
             int inputNumber = scanner.nextInt();
-            switch(inputNumber) {
+            switch (inputNumber) {
                 case 0:
                     nextMove = false;
                     break;
                 case 1:
-                    try{
+                    try {
                         hotelService.addRoomToHotel();
-                    }catch (InputMismatchException  ime){
+                    } catch (InputMismatchException ime) {
                         System.out.println("Inserted wrong value !");
                         ime.printStackTrace();
                     }
                     break;
                 case 2:
-                    try{
+                    try {
                         guestService.addGuestIntoDataBase();
-                    }catch (DateTimeParseException dte){
+                    } catch (DateTimeParseException dte) {
                         System.out.println("\nInserted wrong date value !\n");
                         dte.printStackTrace();
                     }
                     break;
                 case 3:
-                    try{
+                    try {
                         hotelService.makeReservation();
-                    }catch (DateTimeParseException dte){
+                    } catch (DateTimeParseException dte) {
                         System.out.println("\nInserted wrong date value !\n");
                         dte.printStackTrace();
                     }
@@ -75,41 +73,41 @@ public class HotelDisplay {
                     hotelService.showBookedRoomsWithReservation();
                     break;
                 case 7:
-                    try{
+                    try {
                         hotelService.cancelReservation();
-                    }catch (InputMismatchException  ime){
+                    } catch (InputMismatchException ime) {
                         System.out.println("Inserted wrong value !");
                         ime.printStackTrace();
                     }
                     break;
                 case 8:
-                    try{
+                    try {
                         hotelService.findGuest();
-                    }catch (GuestNotFoundException gnf){
+                    } catch (GuestNotFoundException gnf) {
                         System.out.println(gnf.getGetMessage());
                     }
                     break;
                 case 9:
-                    try{
+                    try {
                         guestService.updateGuestStatus();
-                    }catch (InputMismatchException  ime){
+                    } catch (InputMismatchException ime) {
                         System.out.println("Inserted wrong value !");
                         ime.printStackTrace();
                     }
                     break;
 
                 case 10:
-                    try{
+                    try {
                         hotelService.freeTheRoom();
-                    }catch (InputMismatchException  ime){
+                    } catch (InputMismatchException ime) {
                         System.out.println("Inserted wrong value !");
                         ime.printStackTrace();
                     }
                     break;
                 case 11:
-                    try{
+                    try {
                         hotelService.takeTheRoom();
-                    }catch (InputMismatchException  ime){
+                    } catch (InputMismatchException ime) {
                         System.out.println("Inserted wrong value !");
                         ime.printStackTrace();
                     }
@@ -117,12 +115,12 @@ public class HotelDisplay {
 
             }
 
-        }while(nextMove);
+        } while (nextMove);
 
     }
 
 
-    public void showRoomsToCheckoutForToday(){
+    public void showRoomsToCheckoutForToday() {
 
         hotelService.showRoomsToCheckout();
 

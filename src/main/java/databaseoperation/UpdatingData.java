@@ -25,7 +25,7 @@ public class UpdatingData {
 
 
     }
-//AND postCode = :inputPostCode AND street = :inputStreet WHERE id IN (SELECT Address_ID FROM Guest WHERE id = :inputId"
+
 
     public void updateAddress(String city, String postCode, String street, int guestId){
 
@@ -54,57 +54,6 @@ public class UpdatingData {
 
     }
 
-  /*  public void updateGuestName(int guestId, String name){
-        Connection connection = new Connection();
-
-        Query query = connection.getEm().createQuery("UPDATE Guest SET name = :Name WHERE id = :idFromUser");
-        query.setParameter("Name",name);
-        query.setParameter("idFromUser",guestId);
-
-
-
-
-        connection.startTransaction();
-        query.executeUpdate();
-        connection.endTransaction();
-
-        connection.closeConnection();
-
-    }
-
-    public void updateGuestSurname(int guestId, String surname){
-        Connection connection = new Connection();
-
-        Query query = connection.getEm().createQuery("UPDATE Guest SET surname = :Surname WHERE id = :idFromUser");
-        query.setParameter("Surname",surname);
-        query.setParameter("idFromUser",guestId);
-
-
-
-
-        connection.startTransaction();
-        query.executeUpdate();
-        connection.endTransaction();
-
-        connection.closeConnection();
-
-    }*/
-
-  /*  public void updateGuestBirthday(int guestId, String birthday){
-        Connection connection = new Connection();
-        LocalDate updatedBirthday = LocalDate.parse(birthday);
-
-        Query query = connection.getEm().createQuery("UPDATE Guest SET birthday = :Birthday WHERE id = :idFromUser");
-        query.setParameter("Birthday",updatedBirthday);
-        query.setParameter("idFromUser",guestId);
-
-        connection.startTransaction();
-        query.executeUpdate();
-        connection.endTransaction();
-
-        connection.closeConnection();
-
-    }*/
 
 
 

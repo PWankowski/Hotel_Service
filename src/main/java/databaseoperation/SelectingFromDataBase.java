@@ -14,7 +14,7 @@ import java.util.List;
 
 public class SelectingFromDataBase {
 
-    public List<Room> selectingRooms(){
+    public List<Room> selectingRooms() {
 
         Connection connection = new Connection();
 
@@ -26,7 +26,7 @@ public class SelectingFromDataBase {
 
     }
 
-    public List<Room> selectingAvailableRooms(){
+    public List<Room> selectingAvailableRooms() {
 
         Connection connection = new Connection();
 
@@ -41,14 +41,14 @@ public class SelectingFromDataBase {
 
     }
 
-    public List<Reservation> selectingBookedRooms(LocalDate inputDate){
-        LocalDate localDate =  LocalDate.now();
+    public List<Reservation> selectingBookedRooms(LocalDate inputDate) {
+        LocalDate localDate = LocalDate.now();
 
         Connection connection = new Connection();
 
         Query query = connection.getEm().createQuery("FROM Reservation  WHERE checkout >= :TodayDate AND checkout < :FutureDate ");
-        query.setParameter("TodayDate",localDate);
-        query.setParameter("FutureDate",inputDate);
+        query.setParameter("TodayDate", localDate);
+        query.setParameter("FutureDate", inputDate);
         List<Reservation> reservationList = query.getResultList();
 
         connection.closeConnection();
@@ -57,13 +57,13 @@ public class SelectingFromDataBase {
 
     }
 
-    public List<Reservation> selectingBookedRooms(LocalDate firstDate,LocalDate secondDate){
+    public List<Reservation> selectingBookedRooms(LocalDate firstDate, LocalDate secondDate) {
 
         Connection connection = new Connection();
 
         Query query = connection.getEm().createQuery("FROM Reservation  WHERE checkout >= :firstDate AND checkout < :nextDate ");
-        query.setParameter("firstDate",firstDate);
-        query.setParameter("nextDate",secondDate);
+        query.setParameter("firstDate", firstDate);
+        query.setParameter("nextDate", secondDate);
         List<Reservation> reservationList = query.getResultList();
 
         connection.closeConnection();
@@ -72,18 +72,17 @@ public class SelectingFromDataBase {
 
     }
 
-    public List<Reservation> selectingRoomsToCheckout(){
-        LocalDate localDate =  LocalDate.now();
+    public List<Reservation> selectingRoomsToCheckout() {
+        LocalDate localDate = LocalDate.now();
 
         Connection connection = new Connection();
 
         Query query = connection.getEm().createQuery("FROM Reservation  WHERE checkout = :TodayDate");
-        query.setParameter("TodayDate",localDate);
+        query.setParameter("TodayDate", localDate);
         List<Reservation> reservationList = query.getResultList();
 
         connection.closeConnection();
-        return  reservationList;
-
+        return reservationList;
 
 
     }
@@ -92,20 +91,18 @@ public class SelectingFromDataBase {
         Connection connection = new Connection();
 
         Query query = connection.getEm().createQuery("FROM Guest  WHERE name = :Name AND surname = : Surname");
-        query.setParameter("Name",inputName);
-        query.setParameter("Surname",inputSurname);
+        query.setParameter("Name", inputName);
+        query.setParameter("Surname", inputSurname);
 
-        try{
+        try {
             return query.getResultList();
-        }catch (NoResultException nr){
-            throw  new GuestNotFoundException("Guest didn't found in database");
-        }finally {
+        } catch (NoResultException nr) {
+            throw new GuestNotFoundException("Guest didn't found in database");
+        } finally {
             connection.closeConnection();
         }
 
     }
-
-
 
 
 }
