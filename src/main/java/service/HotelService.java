@@ -125,12 +125,12 @@ public class HotelService {
     public void findGuest() throws GuestNotFoundException {
         System.out.println("Insert Guest Name: ");
         String inputName = scanner.nextLine();
-        System.out.println("Insert Guest Name: ");
+        System.out.println("Insert Guest Surname: ");
         String inputSurname = scanner.nextLine();
 
         List<Guest> guestsLists = selectingFromDataBase.selectingGuests(inputName, inputSurname);
         if (guestsLists.isEmpty()) {
-            System.out.println("Guest don't exist in our dataBase");
+            throw new GuestNotFoundException();
         } else {
             guestsLists.forEach(System.out::println);
         }

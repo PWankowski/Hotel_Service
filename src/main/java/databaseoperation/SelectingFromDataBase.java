@@ -30,7 +30,7 @@ public class SelectingFromDataBase {
 
         Connection connection = new Connection();
 
-        Query query = connection.getEm().createQuery("FROM Room WHERE isBooked = 0");
+        Query query = connection.getEm().createQuery("FROM Room WHERE isBooked = false");
         List<Room> availableRoomsList = query.getResultList();
 
 
@@ -97,7 +97,7 @@ public class SelectingFromDataBase {
         try {
             return query.getResultList();
         } catch (NoResultException nr) {
-            throw new GuestNotFoundException("Guest didn't found in database");
+            throw new GuestNotFoundException();
         } finally {
             connection.closeConnection();
         }

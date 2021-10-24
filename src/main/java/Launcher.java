@@ -6,9 +6,11 @@ import java.util.NoSuchElementException;
 
 public class Launcher {
 
+    private static HotelDisplay hotelDisplay = new HotelDisplay();
+
     public static void main(String[] args) {
 
-        HotelDisplay hotelDisplay = new HotelDisplay();
+
 
         hotelDisplay.showRoomsToCheckoutForToday();
         hotelDisplay.showMenu();

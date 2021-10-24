@@ -1,16 +1,14 @@
 package exceptions;
 
-import java.sql.SQLException;
 
-public class GuestNotFoundException extends Exception {
 
-    private String getMessage;
+public class GuestNotFoundException extends RuntimeException {
 
-    public GuestNotFoundException(String getMessage) {
-        this.getMessage = getMessage;
+
+
+    public GuestNotFoundException() {
+        super("Guest don't exist in our dataBase");
     }
 
-    public String getGetMessage() {
-        return getMessage;
-    }
+
 }

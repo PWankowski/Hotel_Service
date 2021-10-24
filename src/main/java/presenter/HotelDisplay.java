@@ -84,7 +84,7 @@ public class HotelDisplay {
                     try {
                         hotelService.findGuest();
                     } catch (GuestNotFoundException gnf) {
-                        System.out.println(gnf.getGetMessage());
+                        gnf.printStackTrace();
                     }
                     break;
                 case 9:

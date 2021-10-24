@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6aac8d9-4bd7-473e-b1e0-9f93d49e849f" name="Default Changelist" comment="Porządki i formatowanie kodu" />
+    <list default="true" id="d6aac8d9-4bd7-473e-b1e0-9f93d49e849f" name="Default Changelist" comment="Poprawienie rzucania błedu GuestNoFoundException">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +41,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
@@ -63,6 +66,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1626103905474</updated>
+      <workItem from="1630607011317" duration="37000" />
+      <workItem from="1635082567898" duration="3097000" />
     </task>
     <task id="LOCAL-00001" summary="Dodanie pliku persistence i dodanie zaleznosci do poma">
       <created>1626107264860</created>
@@ -295,8 +300,32 @@
       <option name="project" value="LOCAL" />
       <updated>1627235250730</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Porządki i formatowanie kodu">
+      <created>1627235381974</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1627235381974</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Poprawienie rzucania błedu GuestNoFoundException">
+      <created>1635084209874</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1635084209874</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Poprawienie rzucania błedu GuestNoFoundException">
+      <created>1635084432792</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1635084432792</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -311,7 +340,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Utworzenie encji Guest i Address oraz powiazanie ich relacja ONE TO ONE" />
     <MESSAGE value="Utworzenie encji Room i Reservation oraz powiazanie ich relacja Many to Many oraz powiazanie relacja Many To Many Encji Room z Reservation" />
     <MESSAGE value="Utworzenie encji Room i Reservation oraz powiazanie ich relacja Many to One oraz powiazanie relacja Many To One Encji Room z Reservation" />
     <MESSAGE value="Utworzenie encji Room i Reservation oraz powiazanie ich relacja OneToMany oraz powiazanie relacja OneToMany Encji Room z Reservation" />
@@ -336,6 +364,7 @@
     <MESSAGE value="Dodanie metody aktualizujacej adres klienta, utworzenie metody updateAddress w klasie UpdatindData oraz updateGuestStatus w GuestService" />
     <MESSAGE value="Przeniesienie obsługi wyjątkow do klasy HotelDisplay" />
     <MESSAGE value="Porządki i formatowanie kodu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Porządki i formatowanie kodu" />
+    <MESSAGE value="Poprawienie rzucania błedu GuestNoFoundException" />
+    <option name="LAST_COMMIT_MESSAGE" value="Poprawienie rzucania błedu GuestNoFoundException" />
   </component>
 </project>
