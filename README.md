@@ -10,7 +10,7 @@ dodawanie pokoi do bazy hotelowej, dodawanie nowych gosci, rezerwowanie pokoi, p
 English version below:
 
 My first application wrote with Hibernate framework and MySQL database
-I'm still learning  and develop myself from new libraries, framework and issues.
+I'm still learning  and develop myself from new libraries, frameworks and issues.
 
 This is console application displaying menu to menage hotel base where we can do operation like:
 adding new rooms, adding new guests, booking rooms, view room status, cancelling reservation, searching and updating existing guests data
